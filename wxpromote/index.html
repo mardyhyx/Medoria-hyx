@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+  <title>云盘小程序效率MAX</title>
+  <script type="text/javascript">
+    // px-rem 自适应换算
+    function Rem() {
+      var docEl = document.documentElement,
+        oSize = docEl.clientWidth / 7.5;
+      docEl.style.fontSize = oSize + 'px';
+    }
+    window.addEventListener('resize', Rem, false);
+    Rem();
+    // 如果是想禁用长按弹出菜单, 用js
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      display: block;
+      width: 7.5rem;
+      height: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <img src="./images/H5_01.gif">
+  <img src="./images/H5_02.png">
+  <img src="./images/H5_03.png">
+  <img src="./images/H5_04.png">
+  <img src="./images/H5_05.png">
+</body>
+<script type="text/javascript" src="./lib/zepto/zepto.min.js"></script>
+<script type="text/javascript" src="./js/base.js"></script>
+<script type="text/javascript" src="./lib/ecloud/activity.weixin.js"></script>
+<script type="text/javascript" src="./lib/ecloud/activity.ecloud.js"></script>
+<script type="text/javascript" src="./js/wxpromote.js"></script>
+</html>
